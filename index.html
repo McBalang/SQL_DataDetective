@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL DataDetective</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="ribbon">
+    <div class="home-tab" onclick="goHome()">Home</div>
+    <div class="web-icon">
+      <img src="resources/icon.png" alt="Web Icon">
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn">Select Difficulty</div>
+      <div class="dropdown-content">
+        <a href="beginner.html">Beginner</a>
+        <a href="intermediate.html">Intermediate</a>
+        <a href="story.html">Advanced</a>
+      </div>
+    </div>
+  </div>
+
+<div id="content" class="container">
+  <div class="homepage-content">
+  	<div>
+	  	<h1>Welcome to SQL DataDetective</h1>
+	    <p>Unleash the power of data with our SQL query tool. Choose your expertise level and explore the database!</p>
+  	</div>
+  	<div>
+	  	<h3>What is SQL?</h3>
+	    <p>Standard Query Language (SQL) is a language for managing and querying relational databases, facilitating tasks like data retrieval, insertion, updating, and deletion, as well as creating and modifying database structures.</p>
+  	</div>
+
+    <div>
+	    <h3>What is SQL DataDetective About?</h3>
+	    <p>SQL DataDetective is where you can learn and master the basics of query with SQL. SQL DataDetective provide you 3 different layer of difficulty that you can choose below.
+
+	     If you are not yet familiar with what SQL is, you can embark on your journey at the beginner difficulty over here:</p>
+		 	<div class="fancybutton" onclick="location.href='beginner.html'">
+		      <h2>Beginner SQL</h2>
+		      <div class="fancybutton-description">Learn the basic of SQL through guided walkthrough</div>
+		    </div>
+		 	<div class="fancybutton" onclick="location.href='intermediate.html'">
+		      <h2>Intermediate SQL</h2>
+		      <div class="fancybutton-description">Got the basics right? challenge yourself with more complex SQL queries</div>
+		    </div>
+		    <div class="fancybutton" onclick="location.href='story.html'">
+		      <h2>Advance SQL</h2>
+		      <div class="fancybutton-description">want more challenge but exploring database seems broing? try the SQL-Based puzzle narrative</div>
+		    </div>		    
+    </div>
+    <div>
+    	<h3 style="text-align: center; padding: 30px;">choose any, most importantly, have fun</h3>
+    </div>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+

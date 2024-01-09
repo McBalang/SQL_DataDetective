@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story Selection</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="ribbon">
+    <div class="home-tab" onclick="goHome()">Home</div>
+    <div class="web-icon">
+      <img src="resources/icon.png" alt="Web Icon">
+    </div>
+  </div>
+
+  <div class="selection-container">
+    <!-- Case Story -->
+    <div class="story" onclick="selectStory('case')">
+      <h3>Case Mission</h3>
+      <h2>Cybersecurity Breach</h2>
+      <div class="story-description">A hacker conducts a large-scale cybersecurity breach targeting government databases.</div>
+    </div>
+
+    <!-- Task Story -->
+    <div class="story" onclick="selectStory('task')">
+      <h3>Task Mission</h3>
+      <h2>The Bohemian Corporation Conspiracy</h2>
+      <div class="story-description">You are tasked by an unknown entity to investigate The Bohemian Corporation conspiracy to monopilize user data to control the masses</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

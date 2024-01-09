@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL DataDetective - Advanced</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="ribbon">
+    <div class="home-tab" onclick="goHome()">Home</div>
+    <div class="web-icon">
+      <img src="resources/icon.png" alt="Web Icon">
+    </div>
+    <div class="dropdown">
+      <div class="dropbtn">Select Difficulty</div>
+      <div class="dropdown-content">
+        <a href="beginner.html">Beginner</a>
+        <a href="intermediate.html">Intermediate</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="tab-container">
+      <button class="tab story-section-tab" onclick="showSection('story-section')">Tutorial</button>
+      <button class="tab keywords-section-tab" onclick="showSection('keywords-section')">Keyword</button>
+      <button class="tab table-names-section-tab" onclick="showSection('table-names-section')">Table Name</button>
+    </div>
+
+    <!-- Tutorial Section -->
+    <div class="content story-section">
+      <h2 id="tutorialTitle">SQL Intermediate Challenge</h2>
+      <p style="text-align: center;">Test your knowledge by solving these puzzle using your SQL knowledge</p>
+
+      <div id="tutorialContent" class="tutorial-content">
+        <!-- Tutorial slides go here -->
+        <div class="slide">
+          <h1>There are snakes among the grass</h1>
+            <p>In SQL City, the law states that is illegal to imprison an individual that had not be proven guilty, hence they are under watchlist by the city as suspects. Identify the suspects that are roaming around in the city
+          </p>
+        </div>
+
+        <div class="slide">
+          <h1>Pain of being an adult</h1>
+          <p>Technological advancedment of SQL City are a blessing, and a curse. Few residents end up jobless as their job are easily replaceable by machine and AI. The Afterlife boss wish to employ them, but this city is huge! if only they have a list of unemployed citizen... </p>
+        </div>
+
+        <div class="slide">
+          <h1>Its a mess!</h1>
+          <p>SQL City keeps the data of its residents in the database. Honestly, its a mess when you try to find which residents live in which districts! As an intern, the Akira Intelligence Agency (AIA) wish to know who live in Akira</p>
+        </div>
+        <!-- Add more slides as needed -->
+      </div>
+
+      <div class="slider-controls">
+        <button onclick="prevTutorial()">Previous</button>
+        <button onclick="nextTutorial()">Next</button>
+      </div>
+    </div>
+
+    <!-- Keyword Section -->
+    <div class="content keywords-section">
+      <h2>Keywords</h2>
+      <button onclick="appendCommand('SELECT')">SELECT</button>
+      <button onclick="appendCommand('*')"> *</button>
+      <button onclick="appendCommand('FROM')">FROM</button>
+      <button onclick="appendCommand('WHERE')">WHERE</button>
+      <button onclick="appendCommand('AND')">AND</button>
+      <button onclick="appendCommand('OR')">OR</button>
+      <button onclick="appendCommand('ORDER BY')">ORDER BY</button>
+      <button onclick="appendCommand('ASC')">ASC</button>
+      <button onclick="appendCommand('DESC')">DESC</button>
+      <button onclick="appendCommand('LIMIT')">LIMIT</button>
+      <button onclick="appendCommand('OFFSET')">OFFSET</button>
+    </div>
+
+    <!-- Table Names Section -->
+    <div class="content table-names-section">
+      <h2>Table Names</h2>
+      <button onclick="appendCommand('Buildings')">Buildings</button>
+      <button onclick="appendCommand('Cases')">Cases</button>
+      <button onclick="appendCommand('Districts')">Districts</button>
+      <button onclick="appendCommand('Interrogation')">Interrogation</button>
+      <button onclick="appendCommand('Police')">Police</button>
+      <button onclick="appendCommand('Prisoners')">Prisoners</button>
+      <button onclick="appendCommand('Residents')">Residents</button>
+      <button onclick="appendCommand('Security_Cam')">Security_Cam</button>
+      <button onclick="appendCommand('Testimony')">Testimony</button>
+      <!-- Add more table name buttons as needed -->
+    </div>
+
+    <!-- Query Input Section -->
+    <div>
+      <textarea id="sqlQuery" placeholder="Enter your SQL query here"></textarea>
+      <button onclick="executeQuery()">Execute</button>
+      <button onclick="resetTextArea()">Reset</button>
+    </div>
+
+    <!-- Query Result Section -->
+    <div id="queryResult" class="container">
+      <!-- Display query results here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
